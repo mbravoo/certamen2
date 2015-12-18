@@ -3,9 +3,42 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nombre"
+        android:layout_marginTop="46dp"
+        android:layout_alignLeft="@+id/apellido"
+        android:layout_alignStart="@+id/apellido"
+        android:hint="Nombre" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/apellido"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/nombre"
+        android:layout_centerHorizontal="true"
+        android:hint="Apellido" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/boton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Input Fragment"/>
+        android:id="@+id/respuesta"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/boton"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
